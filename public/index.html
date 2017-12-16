@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Magic Square</title>
+    <script src="socket.io.js"></script>
+    <script src="./js/jq.js" charset="utf-8"></script>
+    <script src="view.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .no-res
+        {
+            resize: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+
+
+
+        <div class="col-4 h1 text-center" role="group">
+            <div>
+                <div class="row">
+                    <div class="btn-group" role="group">
+                        <textarea id="0-0" cols="3" rows="1" class="no-res"></textarea>
+                        <textarea id="0-1" cols="3" rows="1" class="no-res"></textarea>
+                        <textarea id="0-2" cols="3" rows="1" class="no-res"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn-group" role="group">
+                        <textarea id="1-0" cols="3" rows="1" class="no-res"></textarea>
+                        <textarea id="1-1" cols="3" rows="1" class="no-res"></textarea>
+                        <textarea id="1-2" cols="3" rows="1" class="no-res"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn-group" role="group">
+                        <textarea id="2-0" cols="3" rows="1" class="no-res" ></textarea>
+                        <textarea id="2-1" cols="3" rows="1" class="no-res"></textarea>
+                        <textarea id="2-2" cols="3" rows="1" class="no-res" ></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group">
+                    <button class="btn btn-success h3" id="generate" style="width: 76px">Start</button>
+                    <button class="btn btn-primary h3" id="clear" style="width: 76px">Clear</button>
+                    <button class="btn btn-info h3" id="left" style="width: 38px">L</button>
+                    <button class="btn btn-info h3" id="right" style="width: 38px">R</button>
+                </div>
+            </div>
+            <div class="text-success text-left text-justify h3" id="result"></div>
+
+        </div>
+
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>
+</html>
